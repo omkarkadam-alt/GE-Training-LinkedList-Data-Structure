@@ -29,4 +29,36 @@ public class LinkedList<T> {
         }
         System.out.println();
     }
+
+    int size(){
+        int numberOfNodes = 0;
+        Node<T> temp = head;
+        while(temp != null){
+            numberOfNodes++;
+            temp = temp.next;
+        }
+
+        return numberOfNodes;
+    }
+
+    void insertAt(int position, T data){
+        if(position < 0 || position >= size())
+        {
+            System.out.println("Invalid Position.");
+            System.out.println();
+        } else{
+            Node <T> newNode = new Node<T>(data);
+            if(position == 0){
+                newNode.next = head;
+                head = newNode;
+            } else{
+                Node <T> prev = head;
+                for(int currIndex = 0; currIndex < position - 1; currIndex++){
+                    prev = prev.next;
+                }
+                newNode.next = prev.next;
+                prev.next = newNode;
+            }
+        }
+    }
 }

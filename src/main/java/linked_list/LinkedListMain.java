@@ -5,9 +5,12 @@ public class LinkedListMain {
         
         LinkedList<Integer> integerLinkedList = new LinkedList<Integer>();
 
-        integerLinkedList.addNode(30);
         integerLinkedList.addNode(56);
         integerLinkedList.addNode(70);
+
+        integerLinkedList.display();
+
+        integerLinkedList.insertAt(1, 30);
 
         integerLinkedList.display();
     }
