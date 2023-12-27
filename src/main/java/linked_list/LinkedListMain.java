@@ -3,11 +3,12 @@ package linked_list;
 public class LinkedListMain {
     public static void main(String[] args) {
         
-        Node<Integer> firstNode = new Node<Integer>(56);
-        Node<Integer> secondNode = new Node<Integer>(30);
-        Node<Integer> thirdNode = new Node<Integer>(70);
+        LinkedList<Integer> integerLinkedList = new LinkedList<Integer>();
 
-        firstNode.setNext(secondNode);
-        secondNode.setNext(thirdNode);
+        integerLinkedList.addNode(30);
+        integerLinkedList.addNode(56);
+        integerLinkedList.addNode(70);
+
+        integerLinkedList.display();
     }
 }
