@@ -5,9 +5,9 @@ public class LinkedListMain {
         
         LinkedList<Integer> integerLinkedList = new LinkedList<Integer>();
 
+        integerLinkedList.addNode(70);
         integerLinkedList.addNode(30);
         integerLinkedList.addNode(56);
-        integerLinkedList.addNode(70);
 
         integerLinkedList.display();
     }
