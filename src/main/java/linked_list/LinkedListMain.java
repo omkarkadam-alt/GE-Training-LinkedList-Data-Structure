@@ -7,12 +7,14 @@ public class LinkedListMain {
 
         integerLinkedList.addNode(56);
         integerLinkedList.addNode(30);
+        integerLinkedList.addNode(40);
         integerLinkedList.addNode(70);
 
         integerLinkedList.display();
-        integerLinkedList.insertAt(2, 40);
-        integerLinkedList.display();
 
+        integerLinkedList.deleteKey(40);
+
+        integerLinkedList.display();
         
     }
 }

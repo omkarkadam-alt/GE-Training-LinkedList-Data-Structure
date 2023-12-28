@@ -108,5 +108,40 @@ public class LinkedList<T> {
         return null;
     }
 
+    void deleteKey(T key){
+
+        Node<T> searchResult = search(key);
+        if(searchResult == null){
+            System.out.println("Node not found.");
+            System.out.println("Size of linked list is: " + size());
+            return;
+        }
+
+        Node<T> temp = head;
+        if(head.data == key){
+            pop();
+            return;
+        }else{
+            if(head.next != null && head.next.data == key){
+                Node<T> temp2 = head;
+                head = head.next;
+                temp2.next = null;
+            }
+            else{
+                while(temp.next.data != key){
+                    temp = temp.next;
+                }
+
+                Node<T> targetNode = temp.next;
+                temp.next = temp.next.next;
+                targetNode.next = null;
+            }
+        }
+
+        System.out.println("Node deleted.");
+        System.out.println("Size of linked list is: " + size());
+        return;
+    }
+
 
 }
