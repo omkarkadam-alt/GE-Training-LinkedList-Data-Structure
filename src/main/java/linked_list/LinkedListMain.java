@@ -12,11 +12,19 @@ public class LinkedListMain {
         integerLinkedList.insertAt(1, 30);
         integerLinkedList.display();
 
-        integerLinkedList.popLast();
-        integerLinkedList.display();
+        Node<Integer> search1 = integerLinkedList.search(50);
+        if(search1 == null){
+            System.out.println("Node with value " + 50 + " was not found");
+        }else{
+            System.out.println("Node with value " + 50 + " found");
+        }
 
-        integerLinkedList.popLast();
-        integerLinkedList.display();
+        Node<Integer> search2 = integerLinkedList.search(56);
+        if(search2 == null){
+            System.out.println("Node with value " + 56 + " was not found");
+        }else{
+            System.out.println("Node with value " + 56 + " found");
+        }
         
     }
 }

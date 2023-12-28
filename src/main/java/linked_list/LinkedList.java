@@ -95,4 +95,18 @@ public class LinkedList<T> {
         return lastNode;
 
     }
+
+    Node search(T key){
+        Node<T> temp = head;
+
+        while(temp != null){
+            if(temp.data == key)
+                return temp;
+            temp = temp.next;
+        }
+
+        return null;
+    }
+
+
 }
