@@ -3,19 +3,20 @@ package linked_list;
 public class LinkedListMain {
     public static void main(String[] args) {
 
-        Stack<Integer> myStack = new Stack<Integer>();
+        Queue<Integer> myQueue = new Queue<Integer>();
 
-        myStack.push(56);
-        myStack.push(30);
-        myStack.push(70);
-        Integer peek1 = myStack.peek();
-        if(peek1 != null)
-            System.out.println(peek1);
+        myQueue.enqueue(56);
+        myQueue.enqueue(30);
+        myQueue.enqueue(70);
 
-        myStack.pop();
-        Integer peek2 = myStack.peek();
-        if(peek2 != null)
-            System.out.println(peek2);
+        Integer front1 = myQueue.front();
+        if(front1 != null)
+            System.out.println(front1);
+
+        myQueue.dequeue();
+        Integer front2 = myQueue.front();
+        if(front2 != null)
+            System.out.println(front2);
 
     }
 }
