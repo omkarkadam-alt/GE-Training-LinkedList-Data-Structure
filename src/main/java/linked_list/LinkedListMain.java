@@ -9,9 +9,13 @@ public class LinkedListMain {
         integerLinkedList.addNode(70);
 
         integerLinkedList.display();
-
         integerLinkedList.insertAt(1, 30);
+        integerLinkedList.display();
 
+        integerLinkedList.pop();
+        integerLinkedList.display();
+
+        integerLinkedList.pop();
         integerLinkedList.display();
     }
 }

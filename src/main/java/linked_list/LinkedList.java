@@ -61,4 +61,16 @@ public class LinkedList<T> {
             }
         }
     }
+
+    Node pop(){
+        if(head == null){
+            return null;
+        }
+
+        Node<T> temp = head;
+        head = head.next;
+        temp.next = null;
+        
+        return temp;
+    }
 }
