@@ -12,10 +12,11 @@ public class LinkedListMain {
         integerLinkedList.insertAt(1, 30);
         integerLinkedList.display();
 
-        integerLinkedList.pop();
+        integerLinkedList.popLast();
         integerLinkedList.display();
 
-        integerLinkedList.pop();
+        integerLinkedList.popLast();
         integerLinkedList.display();
+        
     }
 }
