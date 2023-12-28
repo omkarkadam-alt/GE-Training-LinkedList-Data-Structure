@@ -42,6 +42,15 @@ public class LinkedList<T> {
     }
 
     void insertAt(int position, T data){
+
+        if(size() == 0){
+            if(position != 0){
+                System.out.println("Invalid Position.");
+                System.out.println();
+            }else{
+                head = new Node<T> (data);
+            }
+        }
         if(position < 0 || position >= size())
         {
             System.out.println("Invalid Position.");
