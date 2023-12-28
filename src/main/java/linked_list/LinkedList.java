@@ -3,7 +3,7 @@ package linked_list;
 public class LinkedList<T> {
     Node<T> head;
 
-    LinkedList(){
+    public LinkedList(){
         this.head = null;
     }
 

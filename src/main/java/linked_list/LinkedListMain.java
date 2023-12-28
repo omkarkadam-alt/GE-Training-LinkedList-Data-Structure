@@ -2,19 +2,12 @@ package linked_list;
 
 public class LinkedListMain {
     public static void main(String[] args) {
-        
-        LinkedList<Integer> integerLinkedList = new LinkedList<Integer>();
 
-        integerLinkedList.addNode(56);
-        integerLinkedList.addNode(30);
-        integerLinkedList.addNode(40);
-        integerLinkedList.addNode(70);
+        Stack<Integer> myStack = new Stack<Integer>();
 
-        integerLinkedList.display();
+        myStack.push(56);
+        myStack.push(30);
+        myStack.push(70);
 
-        integerLinkedList.deleteKey(40);
-
-        integerLinkedList.display();
-        
     }
 }
